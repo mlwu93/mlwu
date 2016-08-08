@@ -1,0 +1,365 @@
+/*base*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    font-size: 14px;
+}
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+img {
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #000000;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    padding: 0;
+}
+input, select {
+    vertical-align: middle;
+}
+select, input, textarea {
+    font-size: 16px;
+}
+/*base end*/
+
+/*public*/
+.clearfix:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+    clear: both;
+}
+.none, .hide {
+    display: none
+}
+/*public end*/
+.warp {
+  width: 100%;
+}
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+.header {
+    margin-bottom: 32px;
+}
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+.nav {
+    float: right;
+    margin-top: 70px;
+}
+.nav a {
+    float: left;
+    padding: 0 38px;
+    border-right: 1px solid #bbb;
+}
+.nav .first {
+    border-left: 1px solid #bbb;
+}
+.nav .active {
+    color: #0072CC;
+}
+.nav :last-child {
+    border-right: 1px solid #bbb;
+}
+.banner {
+    position:relative;
+}
+.banner_left {
+    position: absolute;
+    top: 217px;
+    width: 430px;
+    font-size: 26px;
+    line-height: 104px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(245, 0, 80, .7);
+}
+.banner_center {
+    position: absolute;
+    bottom: 0;
+    right: 285px;
+    width: 212px;
+    height: 214px;
+    box-sizing:border-box;
+    padding: 10px 13px;
+    color: #fff;
+    background-color: rgba(177, 211, 0, .9);
+}
+.banner_center:hover {
+    background-color: #b1d300;
+}
+.banner_right {
+    position: absolute;
+    right: 0;
+    bottom: 214px;
+    width: 285px;
+    height: 214px;
+    box-sizing:border-box;
+    padding:10px 15px;
+    color: #fff;
+    background-color: rgba(132, 192, 255, .9);
+}
+.banner_right:hover {
+    background-color: #84c0ff;
+}
+.banner_subtitle{
+    font-size: 16px;
+}
+.banner_title{
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+}
+.banner_more {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: #6289B3;
+}
+.icon {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    float: right;
+    width: 15px;
+    height: 15px;
+    background: url("../img/arrow.png") no-repeat;
+}
+.index_menu {
+    margin: 50px auto;
+}
+.menu_left,.menu_center,.menu_right {
+    float: left;
+    width: 320px;
+    text-align: center;
+}
+.menu_icon {
+    margin: 0 auto;
+}
+.memu_name {
+    color: #333;
+    font-size: 22px;
+    margin: 10px auto 8px auto;
+}
+.menu_summary {
+    color: #999;
+    margin-bottom: 14px;
+}
+.menu_more {
+    display: block;
+    margin: 14px auto 0 auto;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    color: #bbb;
+    border: 1px solid #ddd;
+}
+.left_more:hover {
+    color: #f50253;
+    border-color: #f50253;
+}
+.center_more:hover {
+    color: #82bbf5;
+    border-color: #82bbf5;
+}
+.right_more:hover {
+    color: #b3da00;
+    border-color: #b3da00;
+}
+/*关于我们*/
+.left_column {
+    width: 215px;
+    float: left;
+}
+.caption {
+    position: relative;
+    font-size: 22px;
+    color: #333;
+    /*text-align: center;*/
+    margin-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-bottom: 1px solid #ddd;
+}
+.menu_introduce,.menu_advantage,.menu_vision {
+    position: absolute;
+    left: 30px;
+    bottom: 13px;
+    width: 3px;
+    height: 20px;
+}
+.menu_introduce {
+    background-color: #F50253;
+}
+.menu_advantage {
+    background-color: #82BBF5;
+}
+.menu_vision {
+    background-color: #B3DA00;
+}
+.memu_nav {
+    padding-left: 40px;
+}
+.memu_nav a {
+    display: block;
+    color: #666666;
+    margin-top: 20px;
+}
+.memu_nav .active {
+    color: #0072CC;
+}
+.right_content {
+    float: left;
+    padding: 40px 0 50px 35px;
+    width: 658px;
+    min-height: 665px;
+    border-left: 1px solid #ddd;
+}
+.subject_head {
+    padding-bottom: 20px;
+    color: #333;
+    font-size: 22px;
+    border-bottom: 1px solid #ddd;
+}
+.modular {
+    margin-top: 40px;
+}
+.market_strength {
+    margin-bottom: 40px;
+}
+.subtitled {
+    color: #666;
+    font-size: 18px;
+}
+.main_text {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+}
+.plates {
+    display: block;
+    margin: 35px auto;
+}
+.img_center {
+    margin: 35px auto;
+}
+/*联系我们*/
+.map {
+    margin-bottom: 50px;
+}
+.map_img {
+    float: left;
+    margin-top: 134px;
+}
+.contact_info {
+    float: left;
+    margin: 217px 0 0 100px;
+}
+.contact_img {
+    display: block;
+    margin-bottom: 30px;
+}
+.info {
+    color: #999;
+    line-height: 24px;
+}
+/*广纳贤才*/
+.job {
+    margin-bottom: 50px;
+}
+.job_content {
+    margin-top: 40px;
+}
+.job_title {
+    padding: 0 0 20px 46px;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
+}
+.job_item {
+    padding-left: 46px;
+    font-size: 16px;
+}
+.job_info {
+    margin-top: 32px;
+}
+.job_text {
+    display: block;
+    margin-top: 13px;
+    font-size: 14px;
+    color: #999;
+}
+.footer {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #999;
+    background-color: #EEE;
+}
